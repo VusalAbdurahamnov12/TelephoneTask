@@ -1,0 +1,13 @@
+ int num = 1000;
+            int summary = 0;
+            bool isAdboy = false;
+            while (isAdboy != true) {
+                Thread.Sleep(num);
+                summary += num;
+                num = num + 1000;
+                if (Console.ReadKey().Key == ConsoleKey.Enter)
+                {
+                    isAdboy = true;
+                }
+            }
+            Console.WriteLine(summary);
