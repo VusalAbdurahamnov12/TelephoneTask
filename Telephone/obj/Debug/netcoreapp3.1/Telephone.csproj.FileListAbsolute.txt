@@ -1,0 +1,14 @@
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.csproj.AssemblyReference.cache
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.AssemblyInfoInputs.cache
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.AssemblyInfo.cs
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.csproj.CoreCompileInputs.cache
+C:\Workspace_Main\TelephoneTask\Telephone\bin\Debug\netcoreapp3.1\Telephone.exe
+C:\Workspace_Main\TelephoneTask\Telephone\bin\Debug\netcoreapp3.1\Telephone.deps.json
+C:\Workspace_Main\TelephoneTask\Telephone\bin\Debug\netcoreapp3.1\Telephone.runtimeconfig.json
+C:\Workspace_Main\TelephoneTask\Telephone\bin\Debug\netcoreapp3.1\Telephone.runtimeconfig.dev.json
+C:\Workspace_Main\TelephoneTask\Telephone\bin\Debug\netcoreapp3.1\Telephone.dll
+C:\Workspace_Main\TelephoneTask\Telephone\bin\Debug\netcoreapp3.1\Telephone.pdb
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.dll
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.pdb
+C:\Workspace_Main\TelephoneTask\Telephone\obj\Debug\netcoreapp3.1\Telephone.genruntimeconfig.cache

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using Telephone.Models;
 namespace Telephone.Interface
 {
     interface IContact
@@ -13,7 +13,7 @@ CallHistory*/
 
         public void Add(Person person);
         public void Delete(Person person);
-        public void Call(string name);
+        public void Call(Person person);
         public void CallByNumber(int number);
     }
 }

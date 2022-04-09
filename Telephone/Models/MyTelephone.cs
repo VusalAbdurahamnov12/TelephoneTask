@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Telephone.Interface;
 using System.Threading;
+using System.Threading.Tasks;
+
 namespace Telephone.Models
 {
     class MyTelephone : IContact
@@ -13,17 +15,42 @@ namespace Telephone.Models
             MyContact.Add(person);
         }
 
-        public void Call(string name)
+        public void Call(Person person)
         {
-            bool isTalking = false;
-            Person person = SearchbyName(name);
-            if (person != null)
+            
+            Console.WriteLine("Calling");
+            Thread.Sleep(10000);
+            Console.WriteLine("Takes call");
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+            Task decreaseBalance = new Task(() =>  DecreaseBalance(person));
+            Task waitingKey = new Task(() => WaitingKey());
+
+            
+            waitingKey.Start();
+            decreaseBalance.Start();
+            Task.WhenAny(waitingKey, decreaseBalance).Wait();
+
+            watch.Stop();
+            var elapsedS = Math.Round(watch.Elapsed.TotalSeconds, 0);
+
+            TimeSpan time = TimeSpan.FromSeconds(elapsedS);
+            string str = time.ToString(@"hh\:mm\:ss");
+            Console.WriteLine(person.Balance);
+            Console.WriteLine($"Total talking time :{str}");
+        }
+        static void  WaitingKey()
+        {
+            while (Console.ReadKey().Key != ConsoleKey.Enter) Console.Clear();
+            
+            return;
+        }
+        static void DecreaseBalance(Person p)//threading ile acamq
+        {
+            while (true)
             {
-                Console.WriteLine("Calling");
                 Thread.Sleep(10000);
-                DateTime startTimne = DateTime.UtcNow;
-                int startingTime = startTimne.Millisecond;
-                
+                p.Balance -= 0.03;
+                if (p.Balance < 0.03) return;
             }
         }
 
