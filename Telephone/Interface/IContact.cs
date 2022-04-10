@@ -13,7 +13,7 @@ CallHistory*/
 
         public void Add(Person person);
         public void Delete(Person person);
-        public void Call(Person person);
+        public void Call(Person Myperson, Person person);
         public void CallByNumber(int number);
     }
 }
